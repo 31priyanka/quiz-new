@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Quiz Questions</title>
+</head>
+<body>
+    <!-- <button>Reload Page</button>     -->
+    <!-- modal box -->
+    <form id="modalbox">
+        <div id="login">
+          <label><b>Username</b></label>
+          <input type="text" id="username" maxlength="10" placeholder="Enter Username">
+      
+          <label><b>Email ID</b></label>
+          <input type="text" id="email"  placeholder="Enter email id">
+            
+          <!-- login button -->
+          <button  type="submit" value="login" onsubmit="return formvalidation()"><b>Login</b></button>
+          
+        </div>
+    </form>
+
+
+    <!-- Quiz app -->
+    <div class="quiz-container" id="quiz">
+        <h3>Welcome, <span id="usernameDisplay"></span>!</h3>
+
+        <h1><i><u>Welcome to Quiz App</u></i></h1>
+        <div class="quiz-header">
+            <h2 id="question">Question Text</h2>
+            <!-- options -->
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                </li>
+            </ul>
+
+        </div>
+        <div class="btn">
+        <!-- previous button -->
+        <button1 id="previous"><b> <-- Previous</b></button1>
+        <!-- Next button -->
+        <button2 id="next"><b>Next --> </b></button2>
+        </div>
+    </div>
+
+    <div id="resultbox">
+        <h1><u><i>Quiz Result</i></u></h1>
+        <table id="usertable">
+            <h3>Current User Details</h3>
+            <tr>
+                <td><b>Current User</b></td>
+                <td id="usernamea"></td>
+            </tr>
+            <tr>
+                <td><b>Total Question</b></td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td><b>Correct Answers</b></td>
+                <td id="totalcorrect"></td>
+            </tr>
+            <tr>
+        </table>
+            <h3>Previous Users and Scores</h3>
+        <table id="alltable">
+     
+            <tr>
+                <td > <b>S.No.</b></td>
+                <td ><b>User Name</b></td>
+                <td ><b>User Email</b></td>
+                <td ><b>Score of User</b></td>
+            </tr>
+        </table>
+
+            <button id="reset"><b> Reset</b></button> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

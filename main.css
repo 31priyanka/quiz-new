@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    background-image: linear-gradient(315deg, white 0%, rgb(118, 175, 185) 100%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.b {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+  }
+
+  input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    font-size: 20px;
+    background-color: #c28f21;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  #login {
+    padding: 16px;
+  }
+  
+  span.id {
+    float: right;
+    padding-top: 16px;
+  }
+
+.quiz-container{
+    background-color: #ecddef;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 2px;
+    width: 900px;
+    overflow: hidden;
+    display: none;
+}
+.quiz-container h3{
+    font-size: 25px;
+    margin: 24px 10px -15px 47px;
+}
+
+.quiz-container h1{
+    color: brown;
+    font-size: 40px;
+    text-align: center;
+}
+.quiz-header{
+    padding: 0 2rem 1rem 2rem;
+    font-size: 20px;  
+}
+h2{
+   text-align: center;
+   padding: 1rem;
+   margin: 0; 
+}
+ul{
+    font-size: 40px;
+    list-style-type: none;
+}
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+ul li label{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#previous{
+    background-color: #21b7c2;
+    padding: 10px;
+    border-radius: 22%;
+    font-size: 21px;
+    margin: 2px;
+}
+#next{
+    background-color: #51b88d;
+    padding: 10px;
+    border-radius: 22%;
+    font-size: 21px;
+    margin: 2px;
+}
+
+
+#reload{
+    text-align: center;
+}
+
+
+
+#resultbox {
+    display: none;
+    background: rgb(183, 196, 180);
+    width: 40%;
+    margin: 10px auto 7px;
+    border-radius: 50px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 2px;
+}
+
+/* #resultbox {
+    margin: 0px;
+} */
+
+#usertable{
+    width: 100%;
+}
+
+td {
+    width: 50%;
+}
+
+table,
+td {
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+#resultbox h3{
+    width: 100%;
+    font-size: 25px;
+    background-color: grey;
+    color: rgb(7, 8, 7);
+    margin: 20px 0px 23px 0px;
+    padding: 8px 0px 8px 0px;
+}
+#alltable{
+    width: 100%;
+}
+
+#alltable td{
+    width: 25%;
+}
+
+th{
+    width: 100%;
+}
+#resultbox h1 u i{
+    padding: 7px 52px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(7, 11, 235);
+    background-color: white;
+}
